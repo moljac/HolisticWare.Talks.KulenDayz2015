@@ -79,64 +79,45 @@ http://developer.xamarin.com/videos
 
 
 
-|----------------------|-------------------------------------------|---------------------------------------------|
-|                      |                                           |                                             |
-|----------------------|-------------------------------------------|---------------------------------------------|
-| AND                  |                                           |                                             |
-|                      | and101-intro-to-xamarin-android           | Introduction to Xamarin.Android [AND101]    |                                   |
-|                      | and102-activities-intents                 | Activities and Intents [AND102]             |
-|                      | and110-list-views-and-adapters-in-android |                                             |
-|                      |                                           |                                             |
-|                      |                                           |                                             |
-|                      |                                           |                                             |
-|                      |                                           |                                             |
-|                      |                                           |                                             |
-|                      |                                           |                                             |
-|                      |                                           |                                             |
-
-
+	AND    
+		and101-intro-to-xamarin-android           	Introduction to Xamarin.Android [AND101]                                    |
+		and102-activities-intents                 	Activities and Intents [AND102]          
+		and110-list-views-and-adapters-in-android 	List Views and Adapters in Android [AND110]
+		and115-recyclerview							RecyclerView and CardView in Android [AND115]
+		and205-navigation-patterns					Navigation Patterns [AND205]
+		and210-backgrounding						Introduction to Backgrounding in Android [AND210]
+		and230-googlemaps							Google Maps [AND230]
+		and231-location-services					Location Services [AND231]
+		and240-touch-in-android						Touch in Android [AND240]
+		and241-touch-gestures						Gestures in Android [AND241]
 		
-		List Views and Adapters in Android [AND110]
-	and115-recyclerview	RecyclerView and CardView in Android [AND115]
-	and205-navigation-patterns	Navigation Patterns [AND205]
-	and210-backgrounding	Introduction to Backgrounding in Android [AND210]
-	and230-googlemaps	Google Maps [AND230]
-	and231-location-services	Location Services [AND231]
-	and240-touch-in-android	Touch in Android [AND240]
-	and241-touch-gestures	Gestures in Android [AND241]
+	IOS	
+		ios101-intro-to-ios							Introduction to Xamarin.iOS [IOS101]
+		ios102-designer								Working with the Designer [IOS102]
+		ios110-tables-views-in-ios					Fundamentals of Table Views iOS [IOS110]
+		customizing-table-views-ios115				Customizing Table Views [iOS115]
+		ios205-navigation							Navigation Patterns [iOS205]
+		ios210-backgrounding						Introduction to Backgrounding: Running Finite-Length Tasks [IOS210]
+		ios211-background-modes-and-file-transfers	Background Modes and File Transfers [IOS211]
+		ios215-editing-tableviews					Editing Table Views [iOS215]
+		ios230-maps-and-location-in-ios				Maps and Location in iOS [IOS230]
+		ios240-touch-in-ios							Touch in iOS [IOS240]
+		ios300-advanced-ios-ui						Advanced iOS UI - AutoLayout + Constraints [IOS300]
+													What's New in iOS8 [IOS350]
 		
-IOS	ios101-intro-to-ios	Introduction to Xamarin.iOS [IOS101]
-	ios102-designer	Working with the Designer [IOS102]
-	ios110-tables-views-in-ios	Fundamentals of Table Views iOS [IOS110]
-	customizing-table-views-ios115	Customizing Table Views [iOS115]
-	ios205-navigation	Navigation Patterns [iOS205]
-	ios210-backgrounding	Introduction to Backgrounding: Running Finite-Length Tasks [IOS210]
-	ios211-background-modes-and-file-transfers	Background Modes and File Transfers [IOS211]
-	ios215-editing-tableviews	Editing Table Views [iOS215]
-	ios230-maps-and-location-in-ios	Maps and Location in iOS [IOS230]
-	ios240-touch-in-ios	Touch in iOS [IOS240]
-	ios300-advanced-ios-ui	Advanced iOS UI - AutoLayout + Constraints [IOS300]
-		What's New in iOS8 [IOS350]
+	XAM		
+		xam101-intro-to-mobilekickstart				Orientation and Welcome [XAM101]
+		xam110-introduction-to-cross-platform-mobile-development	
+		xam120-intro-to-xamarinforms	
+		xam130-xaml-in-xamarinforms					XAML in Xamarin.Forms [XAM130]
+													Resources and Styles in Xamarin.Forms [XAM140]
+													Consuming REST-based Web Services [XAM150]
+													Data Binding in Xamarin.Forms [XAM310]
+													Using ListView in Xamarin.Forms [XAM311]
+													Model-View-ViewModel in Xamarin.Forms [XAM320]
 		
-		
-		
-XAM		
-	xam101-intro-to-mobilekickstart	Orientation and Welcome [XAM101]
-	xam110-introduction-to-cross-platform-mobile-development	
-	xam120-intro-to-xamarinforms	
-	xam130-xaml-in-xamarinforms	XAML in Xamarin.Forms [XAM130]
-		Resources and Styles in Xamarin.Forms [XAM140]
-		Consuming REST-based Web Services [XAM150]
-		Data Binding in Xamarin.Forms [XAM310]
-		Using ListView in Xamarin.Forms [XAM311]
-		Model-View-ViewModel in Xamarin.Forms [XAM320]
-		
-		
-		
-		`
-		
-XTC		
-	xtc101-intro-to-testing	Intro to Testing [XTC101]
-	xtc102-working-with-xamarinuitest	Working with Xamarin.UITest [XTC102]
-	xtc103-deploying-to-test-cloud	Deploying to Test Cloud [XTC103]
-	xtc201-intro-to-calabash-testing	Introduction to Calabash [XTC201]
+	XTC		
+		xtc101-intro-to-testing						Intro to Testing [XTC101]
+		xtc102-working-with-xamarinuitest			Working with Xamarin.UITest [XTC102]
+		xtc103-deploying-to-test-cloud				Deploying to Test Cloud [XTC103]
+		xtc201-intro-to-calabash-testing			Introduction to Calabash [XTC201]
