@@ -79,11 +79,24 @@ http://developer.xamarin.com/videos
 
 
 
+|----------------------|-------------------------------------------|---------------------------------------------|
+|                      |                                           |                                             |
+|----------------------|-------------------------------------------|---------------------------------------------|
+| AND                  |                                           |                                             |
+|                      | and101-intro-to-xamarin-android           | Introduction to Xamarin.Android [AND101]    |                                   |
+|                      | and102-activities-intents                 | Activities and Intents [AND102]             |
+|                      | and110-list-views-and-adapters-in-android |                                             |
+|                      |                                           |                                             |
+|                      |                                           |                                             |
+|                      |                                           |                                             |
+|                      |                                           |                                             |
+|                      |                                           |                                             |
+|                      |                                           |                                             |
+|                      |                                           |                                             |
 
 
-AND	and101-intro-to-xamarin-android	Introduction to Xamarin.Android [AND101]
-	and102-activities-intents	Activities and Intents [AND102]
-	and110-list-views-and-adapters-in-android	List Views and Adapters in Android [AND110]
+		
+		List Views and Adapters in Android [AND110]
 	and115-recyclerview	RecyclerView and CardView in Android [AND115]
 	and205-navigation-patterns	Navigation Patterns [AND205]
 	and210-backgrounding	Introduction to Backgrounding in Android [AND210]
