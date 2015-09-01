@@ -45,38 +45,31 @@
 
 ## Documentation
 
+* 	Developers Docs		
+	[http://developer.xamarin.com/](http://developer.xamarin.com/)		
+	*	Platform docs		
+		*	[http://developer.xamarin.com/guides/ios/](http://developer.xamarin.com/guides/ios/)		
+		*	[http://developer.xamarin.com/guides/android/](http://developer.xamarin.com/guides/android/)		
+		*	[http://developer.xamarin.com/guides/cross-platform/xamarin-forms/](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/)		
+		*	[http://developer.xamarin.com/guides/mac/getting_started/hello,_mac/](http://developer.xamarin.com/guides/mac/getting_started/hello,_mac/)		
+		*	[http://developer.xamarin.com/guides/cross-platform/windows/](http://developer.xamarin.com/guides/cross-platform/windows/)		
+	*	Guides		
+		[http://developer.xamarin.com/guides](http://developer.xamarin.com/guides)		
+	*	Recipes		
+		[http://developer.xamarin.com/recipes](http://developer.xamarin.com/recipes)		
+	*	Samples		
+		[http://developer.xamarin.com/samples-all](http://developer.xamarin.com/samples-all)		
+	*	API		
+		[http://developer.xamarin.com/api/](http://developer.xamarin.com/api/)
+	*	Forums		
+		[http://forums.xamarin.com/](http://forums.xamarin.com/)
+	*	Components		
+		[http://components.xamarin.com/](http://components.xamarin.com/)
+	*	Videos		
+		[http://developer.xamarin.com/videos](http://developer.xamarin.com/videos)
 
 
-* [http://developer.xamarin.com/](http://developer.xamarin.com/)
-http://developer.xamarin.com/guides/ios/
-http://developer.xamarin.com/guides/android/
-http://developer.xamarin.com/guides/cross-platform/xamarin-forms/
-http://developer.xamarin.com/guides/mac/getting_started/hello,_mac/
-http://developer.xamarin.com/guides/cross-platform/windows/
-
-
-http://developer.xamarin.com/guides
-http://developer.xamarin.com/recipes
-http://developer.xamarin.com/samples-all
-http://developer.xamarin.com/api/
-http://forums.xamarin.com/
-http://components.xamarin.com/
-http://developer.xamarin.com/videos
-
-
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-		*	Xamarin.Studio		
-
-
+## Xamarin.University Curriculum		
 
 ```
 	AND    
