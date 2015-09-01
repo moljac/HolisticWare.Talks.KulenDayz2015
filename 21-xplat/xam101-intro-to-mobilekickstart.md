@@ -127,18 +127,143 @@ Data Access Sharing
 
 Language and Compiler Technologies
 
-*	Preprocessor Directives == Conditional Compilation
-	# if __ANDROID__ || __IOS__ ||
-	*	macros/defines:
-		*	__ANDROID__
-		*	__IOS__
-		*	__MOBILE__
-			__ANDROID__ && __IOS__
-		*	WINDOWS_PHONE		
-		*	SILVERLIGHT			
-		*	Platforms:		
-			*	Windows Phone 7 = WINDOWS_PHONE && SILVERLIGHT		
+Preprocessor Directives == Conditional Compilation
+
+	*	macros/defines
 	*	partial classes and methods
 	*	class mirroring
+
+#### macros/defines
+
+	# if __ANDROID__ || __IOS__ ||
+		
+defines:
+
+	__ANDROID__
+	__IOS__
+	__MOBILE__
+	__ANDROID__ && __IOS__
+	WINDOWS_PHONE		
+	SILVERLIGHT			
+	
+Platforms:		
+
+	Windows Phone 7 = WINDOWS_PHONE && SILVERLIGHT		
+	
+Sample:	
+	
+	public static string DatabaseFilePath 
+	{
+		get 
+		{
+			var filename = "MwcDB.db3";
+			
+			#if SILVERLIGHT
+			var path = filename;
+			#else
+				#if __ANDROID__
+				string libraryPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal); ;
+				#else
+				// we need to put in /Library/ on iOS5.1 to meet Apple's iCloud terms
+				// (they don't want non-user-generated data in Documents)
+				string documentsPath = Environment.GetFolderPath (Environment.SpecialFolder.Personal); // Documents folder
+				string libraryPath = Path.Combine (documentsPath, "..", "Library");
+				#endif
+			var path = Path.Combine (libraryPath, filename);
+			#endif
+			
+		return path;		
+	}	
+		
+		
+		
+Disadvantages: maintanability, readibility
+
+#### Class mirroring
+
+Classes that implement the same infterface with different platform code.
+
+Common/shared code:
+
+	Alert.Show("Success!", "Backup coplete");
+	
+Xamarin.Android:
+
+	public class Alert
+	{
+		public void Show(string title, string message)
+		{
+			new AlertDialog.Buider(Application.Context)
+					.SetTitle(title)
+					.SetMessage(message)
+					;
+					
+			return;
+		}
+	}
+	
+Xamarin.iOS:
+
+	public class Alert
+	{
+		public void Show(string title, string message)
+		{
+			new UIAlertView
+					(
+					  title,
+					  message,
+					  null,
+					  "OK"
+					)
+					.Show();
+					
+			return;
+		}
+	}	
 	
 	
+### partial classes and methods
+
+partial classes
+
+*	variant of Class Mirroring.
+*	splitting source code across several files
+	*	used a lot in generated code
+		XAML, etc
+	*	platform specific code in files extracted to platform project/libraries
+
+partial methods:
+
+	*	non existing code is removed from the call
+		*	pre processing		
+			customized initialization
+		*	post processing
+	
+### Files with data
+
+*	Android		
+	Assets/ folder	
+	BuidlAction=AndroidAsset
+*	iOS		
+	Resource/ folder	
+	BuidlAction=BundleResource
+
+	
+## Portable Class Libraries PCLs
+
+*	Class Libraries
+	*	tied to runtime:
+		*	platform
+			desktop, Windows Phone, Silverlight, ...
+		*	.net framework version
+			3.5, 4.0, 4.5 ...
+	*	cannot be shared
+*	Portable Class Libraries
+	*	not directly tied to platform 
+	*	intersection of the API
+		*	usually: more platforms -> less APIs
+		*	thus choose minimal set of platforms (can be added later)		
+	*	binary output created (assemblies)
+	*	profile based on selection of platforms
+		*	list of profiles controlled/moderated by Microsoft
+		*	
