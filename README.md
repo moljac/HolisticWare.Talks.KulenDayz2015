@@ -3,12 +3,19 @@
 
 ## Products
 
-http://xamarin.com/products
-* [http://xamarin.com/platform](http://xamarin.com/platform)
-  * []()
-  http://xamarin.com/platform#ios
-  http://xamarin.com/platform#android
-  http://xamarin.com/platform#desktop
+*	Products		
+	[http://xamarin.com/products](http://xamarin.com/products)		
+	*	Platforms		
+		[http://xamarin.com/platform](http://xamarin.com/platform)	
+		* 	iOS		
+			[http://xamarin.com/platform#ios](http://xamarin.com/platform#ios)		
+		* 	Android		
+			[http://xamarin.com/platform#android](http://xamarin.com/platform#android)		
+		* 	Mac OSX - Desktop	
+			[http://xamarin.com/platform#desktop](http://xamarin.com/platform#desktop)		
+*	[]()  
+  
+  
 
 http://xamarin.com/test-cloud
 http://xamarin.com/insights
