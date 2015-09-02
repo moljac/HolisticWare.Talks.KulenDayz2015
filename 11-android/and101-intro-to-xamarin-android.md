@@ -24,7 +24,7 @@ Build Xamarin.Android app:
 
 Definition:
 
-Xamarin.Android app is:
+*	Xamarin.Android app is:
 	*	an Android native app 
 	*	built with Xamarin toolchain
 	*	Android native classes wrapped (bound) with Xamarin tools
