@@ -218,10 +218,15 @@ Xamarin.Android (uppercase files and some folders)
 	</LinearLayout>
 	
 * 	xml format
-	*	attribute prefix: android		
-		xmlns:android="http://schemas.android.com/apk/res/android"
-		not required, but common practice		
-		can be anything
+	*	attribute 
+		*	prefix: android		
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			not required, but common practice		
+			can be anything
+		*	required attributes		
+			Binary XML file .... must supply ATTRIBUTE attribute
+			*	layout_width		
+			*	layout_height			
 	*	element prefix: not needed
 		&lt;EditText /&gt;
 	
