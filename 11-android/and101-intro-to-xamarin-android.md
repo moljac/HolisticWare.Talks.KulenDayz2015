@@ -131,4 +131,35 @@ Android app:
 	
 			
 		
-	
+## Android Project structure
+
+Android (lowercase)
+
+	res/
+		drawable/
+		drawable-hdpi/
+		drawable-mdpi/
+		drawable-xhdpi/
+		drawable-xxhdpi/
+		drawable-xxxhdpi/
+		layout/
+		values/
+			strings.xml
+			
+Xamarin.Android (uppercase files and some folders)
+
+	Resources/
+		drawable/
+		drawable-hdpi/
+		drawable-mdpi/
+		drawable-xhdpi/
+		drawable-xxhdpi/
+		drawable-xxxhdpi/
+		layout/
+				MainActivity.xml
+		values/
+			Strings.xml		
+			Colors.xml
+			Styles.xml
+			
+			
