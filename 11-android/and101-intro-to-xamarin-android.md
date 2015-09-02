@@ -93,12 +93,13 @@ Android app:
 		*	Data files
 		*	images
 
-*	components of Android app:
-		*	Activities
-		*	Intents
-		*	BroadcastReceivers
-		*	Services
-		*	ContentProviders
+		
+*	components of Android app:				
+		*	Activities		
+		*	Intents		
+		*	BroadcastReceivers		
+		*	Services		
+		*	ContentProviders		
 		
 ## Android UI
 
