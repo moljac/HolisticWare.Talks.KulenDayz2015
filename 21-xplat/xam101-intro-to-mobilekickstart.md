@@ -261,9 +261,118 @@ partial methods:
 *	Portable Class Libraries
 	*	not directly tied to platform 
 	*	intersection of the API
-		*	usually: more platforms -> less APIs
+		*	usually: more platforms -> less APIs (more restrictions)
 		*	thus choose minimal set of platforms (can be added later)		
 	*	binary output created (assemblies)
 	*	profile based on selection of platforms
 		*	list of profiles controlled/moderated by Microsoft
 		*	
+	
+Available:
+	
+	Stream
+	StreamReader
+	MemoryStream
+
+Not available:
+
+	File
+	Directory
+	
+PCL and platform specific code strategies:
+
+	*	Events
+	*	Callbacks
+	*	Dependency Injection
+	*	Factories
+	
+
+### Events
+
+For simple cases.
+
+Portable code:
+
+	public class ApiConsumerPortable
+	{
+		public event bool DoSomething (string);
+		
+		public void PerformDoSomething(string s)
+		{
+			if (DoSomething(s))
+			{
+			}
+		}
+	}
+
+Platform code:
+
+	public class ApiImplementationPlatform
+	{		
+		public void UsePerformDoSomething(string s)
+		{
+			ApiConsumerPortable a = new ApiConsumerPortable();
+
+			a.DoSomething += 
+				(s) =>
+				{
+					new UIAlertView (s, "Do something", null, "OK!");
+				}
+		}
+	}
+	
+### Platform Abstractions
+
+Complex Requirements description through abstractions implemented by
+platform specific code (project).
+
+PCL needs to be informed about implementation.
+
+*	Interfaces
+
+Several techniques:
+
+*	ServiceLocator pattern
+	*	singleton with dynamic dependency registration
+*	Factory pattern
+*	Dependency Injection
+	*	most common
+	*	supplying concrete implementation through:
+		*	constructor
+		*	method (initialization method - usually required)
+		*	property (get/set method - required)
+
+Process:
+
+1.	xplat code defines interface
+2.	platform code implements intreface
+3.	xplat code creates object that implements interface from 1.
+	1.	ctor
+	2.	method
+	3.	property
+
+	
+*	Shared Projects
+	* 	pros
+		*	All API available
+		*	platform logic added directly (defines used)
+		*	all types shared
+		*	for smaller teams with all code in solution
+		* 	simple build systems		
+	*	cons
+		*	macros preprocessor directives / conditional compilation
+			*	readability
+			*	maintainability (spaghetti code)
+			*	difficult unit testing
+		* 	source code distribution Intellectual Property
+*	Portable Class Libraries
+	* 	pros
+		*	enforces architectural design
+		8	binary deployment and distribution (intellectual property)
+			*	nuget package manager
+		*	unit testable		
+	*	cons
+		*	limited APIs
+		*	difficult platform specific implementations
+			*	more effort to implement platform specific features
+		
