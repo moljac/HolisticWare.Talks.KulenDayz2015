@@ -127,7 +127,7 @@ Android app:
 				*	xml code	
 					*.xml android
 					*.axml	Xamarin.Android (BuildAction=)
-					
+				*	BuildAction=AndroidResource
 		*	Collection Views: Lists, Grids
 	
 			
@@ -163,4 +163,65 @@ Xamarin.Android (uppercase files and some folders)
 			Colors.xml
 			Styles.xml
 			
+
+*	in values/	
+	symbolic constants, values not hard-coded
+	
+## UI Designer
+
+*	IDE integration
+	*	Xamarin.Studio
+	*	Visual Studio
+*	features
+	*	Drag&Drop
+	*	
+
+	
+	
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:orientation="vertical"
+		>
+		<!--
+			Button, TextView, EditText
+			attribute
+				android:text 
+			sets Text property on object
 			
+			LinearLayout attribute
+				android:orientation
+			sets Orientation propert on object
+			
+			NOTE: Attribute names do not always match property names!
+			check google Android docs
+		-->
+		<Button
+			android:id="@+id/addJokeButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/app_name"
+		/>
+		<EditText
+			android:id="@+id/newJokeEditText"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			>
+		</EditText>
+		<TextView
+			android:id="@+id/newJokeEditText"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			>
+		</TextView>
+	</LinearLayout>
+	
+* 	xml format
+	*	attribute prefix: android		
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		not required, but common practice		
+		can be anything
+	*	element prefix: not needed
+		&lt;EditText /&gt;
+	
