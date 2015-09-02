@@ -119,6 +119,14 @@ Android app:
 					layout constraints		
 				*	GridLayout		
 				*	AbsoluteLayout
+			*	defined in	
+				*	folder: 
+					Resources/layout
+					res/layout 
+				*	xml code	
+					*.xml android
+					*.axml	Xamarin.Android (BuildAction=)
+					
 		*	Collection Views: Lists, Grids
 	
 			
